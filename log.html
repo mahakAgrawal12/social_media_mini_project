@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Monserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fef9f2;
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.panel-container {
+  background-image: linear-gradient( to left,rgb(255, 126, 148),rgb(231, 163, 124));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  max-width: 800px;
+  text-align: center;
+  height: 300px;
+}
+
+.panel-container strong {
+  line-height: 20px;
+}
+
+.panel-container p {
+  margin: 25px 0;
+  line-height: 20px;
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+  
+  
+}
+
+.rating {
+  cursor: pointer;
+  flex: 1;
+  padding: 20px;
+  margin: 10px 5px;
+}
+
+.rating.active,
+.rating:hover {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating img {
+  width: 40px;
+}
+
+.rating small {
+  color: #555;
+  display: inline-block;
+  margin: 10px 0 0;
+}
+
+.rating.active small,
+.rating:hover small {
+  color: #111;
+}
+
+.btn {
+  background-color: #302d2b;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 30px;
+}
+
+.fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+    </style>
+  </head>
+<a style="margin-top: -500px;color: rgb(0, 0, 0);font-weight: bold;font-size: 30px;font-family: 'Times New Roman', Times, serif;margin-left: -500px;background-image:linear-gradient( to top,rgb(156, 156, 252),pink);border: 5px solid black;border-style: ridge;">Please give your valuable feedback!</a>
+  <body style="background-image:url(./b.gif);background-size: cover;background-repeat: no-repeat;">
+    <!-- Design by Ildiesign - https://dribbble.com/shots/7292664-Survey-UI-Design -->
+    <!-- Icons by - https://www.flaticon.com/authors/roundicons -->
+    <div id="panel" class="panel-container">
+      <strong
+        >How satisfied are you with our<br />
+        team support performance?</strong
+      >
+      <div class="ratings-container">
+        <div class="rating">
+          <img
+            src="./un.png"
+            alt=""
+          />
+          
+          <small  style="font-weight: bold;">Unhappy</small>
+        </div>
+        <div class="rating">
+          <img
+            src="./ne.jpg"
+            alt=""
+          />
+          <small style="font-weight: bold;">Neutral</small>
+        </div>
+        <div class="rating active">
+          <img
+            src="./ha.jpg"
+            alt=""
+          />
+          <small style="font-weight: bold;">Satisfied</small>
+        </div>
+      </div>
+      <button class="btn" id="send">Send review</button>
+    </div>
+  </body>
+  <script>
+      const ratingsEl = document.querySelectorAll(".rating");
+const sendBtn = document.querySelector("#send");
+const panel = document.querySelector("#panel");
+
+ratingsEl.forEach((el) => {
+  el.addEventListener("click", () => {
+    ratingsEl.forEach((innerEl) => {
+      innerEl.classList.remove("active");
+    });
+
+    el.classList.add("active");
+  });
+});
+
+sendBtn.addEventListener("click", () => {
+  panel.innerHTML = `
+		<i class="fa fa-heart"></i>
+		<strong>Thank you!</strong>
+		<p>We'll use your feedback to improve our team support performance.</p>
+		<a href="./index.html"><button class="btn">Done</button></a>
+	`;
+});
+  </script>
+</html>

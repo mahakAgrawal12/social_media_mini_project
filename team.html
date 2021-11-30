@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background: #000000;
+}
+.bulb-holder{
+    width: 100px;
+    height: 40px;
+    background: teal;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: translate(630px,120px);
+    z-index: 1;
+}
+.bulb{
+    width: 100px;
+    height: 20px;
+    background: #fff;
+    border-radius: 60%;
+    transform: translate(0px,30px);
+    animation: light 2000ms infinite cubic-bezier(1, -0.45, 0, 1.89);
+}
+#b1{
+    transform: translate(750px,200px);
+}
+#b2{
+    transform: translate(500px,200px);
+}
+
+.front{
+    width: 500px;
+    height: 500px;
+    background: #021414;
+    transform: translate(400px,100px);
+}
+#love{
+    width: 200px;
+    height: 100px;
+    transform: translate(190px,200px);
+}
+#love h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family: cursive;
+    background: radial-gradient(purple,lightcoral,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 500ms infinite;
+}
+@keyframes gradient{
+    25%{
+        background: radial-gradient(purple,rgb(240, 128, 221),yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: radial-gradient(aqua,dodgerblue,red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    75%{
+        background: radial-gradient(rgb(233, 2, 156),rgb(64, 243, 47),yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: radial-gradient(rgb(105, 128, 0),rgb(27, 240, 204),yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes light{
+    10%{
+        box-shadow: 0 1px 10px yellow,
+                0 2px 20px yellow,
+                10px 20px 30px yellow,            
+                -10px 20px 30px yellow,            
+                30px 50px 50px yellow,          
+                -30px 50px 50px yellow;
+
+    }
+    20%{
+        box-shadow: none;
+    }
+    30%{
+        box-shadow: 0 1px 10px lightcoral,
+                0 2px 20px lightcoral,
+                10px 20px 30px lightcoral,            
+                -10px 20px 30px lightcoral,            
+                30px 50px 50px lightcoral,          
+                -30px 50px 50px lightcoral;
+
+    }
+    40%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 1px 10px aqua,
+                0 2px 20px aqua,
+                10px 20px 30px aqua,            
+                -10px 20px 30px aqua,            
+                30px 50px 50px aqua,          
+                -30px 50px 50px aqua;
+
+    }
+    60%{
+        box-shadow: none;
+    }
+    70%{
+        box-shadow: 0 1px 10px purple,
+                0 2px 20px purple,
+                10px 20px 30px purple,            
+                -10px 20px 30px purple,            
+                30px 50px 50px purple,          
+                -30px 50px 50px purple;
+
+    }
+    80%{
+        box-shadow: 0 1px 10px tomato,
+        0 2px 20px tomato,
+        10px 20px 30px tomato,            
+        -10px 20px 30px tomato,            
+        30px 50px 50px tomato,          
+        -30px 50px 50px tomato;
+    } 
+    90%{
+        box-shadow: 0 1px 10px yellow,
+        0 2px 20px yellow,
+        10px 20px 30px yellow,            
+        -10px 20px 30px yellow,            
+        30px 50px 50px yellow,          
+        -30px 50px 50px yellow,
+        40px 60px 100px yellow,          
+        -40px 60px 100px yellow,
+        70px 70px 100px yellow,          
+        -70px 70px 100px yellow;
+    }
+    100%{
+        box-shadow: 0 1px 10px yellow,
+        0 2px 20px yellow,
+        10px 20px 30px yellow,            
+        -10px 20px 30px yellow,            
+        30px 50px 50px yellow,          
+        -30px 50px 50px yellow,
+        40px 60px 100px yellow,          
+        -40px 60px 100px yellow,
+        70px 70px 100px yellow,          
+        -70px 70px 100px yellow;
+    }
+}
+
+.con{
+    width: 100%;
+    margin-top: -110px;
+    margin-left: 60px;
+}
+
+
+.p{
+            width: 400px;
+            border: 8px solid rgb(8, 8, 8);
+            border-style:double;
+            box-shadow: 4px 3px white;
+        }
+        .m{
+            width: 400px;
+            border: 8px solid rgb(8, 8, 8);
+            border-style:double;
+            box-shadow: 4px 3px white;
+        }
+        .d{
+            width: 400px;
+            border: 8px solid rgb(8, 8, 8);
+            border-style:double;
+            box-shadow: 4px 3px white;
+        }
+.info{
+            display: inline-flex;
+            text-align: center;
+            margin-top: 5px;
+            
+        }
+        .img{
+    width: 300px;
+    height: 300px;
+    display: inline-flex;
+    margin-left: 80px;
+    margin-top: 255px;
+    
+}
+        .m1 {
+            background-image:url(./s.jpg);
+            width: 420px;
+            height: 180px;
+            margin-right: 20px;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        
+        .p1{
+            background-image: url(./s.jpg);
+            width: 420px;
+            height: 180px; 
+            margin-right: 20px;
+            margin-left: 96px;
+            margin-top: 10px;
+        }
+        .d1{
+            background-image: url(./s.jpg);
+            width: 420px;
+            height: 180px; 
+            margin-right: 20px;
+            margin-left: 6px;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- <a href="./services.html" class="g"><span style="color: white;">GO BACK</span></a>   -->
+      <div class="con">
+    <div class="bulb-holder">
+        <div class="bulb">
+            <div class="light"></div>
+        </div>
+    </div>
+
+    <div class="bulb-holder" id="b1">
+        <div class="bulb">
+            <div class="light"></div>
+        </div>
+    </div>
+    <div class="bulb-holder" id="b2">
+        <div class="bulb">
+            <div class="light"></div>
+        </div>
+    </div>
+    
+ </div>   
+ <div class="img">
+    <img src="./pal.jpeg"  style="margin-left:5%" class="p">
+        <img src="./mahi.jpeg" style="margin-left:10%" class="m">
+        <img src="./dim.jpeg" style="margin-left:10%" class="d">
+    </div>
+    <div class="info">
+        <div class="p1">
+            <p style="margin-top: 18px;">Email id:palak.bansal_cs19@gla.ac.in</p>
+            <br>
+            <p>Contact No:9876543210 </p> <br> 
+            <p>GLA UNIVERSITY MATHURA</p>  <br>
+            <p>SOCIAL MEDIA LIMITED</p>  
+         </div>
+        <div class="m1">
+            <p style="margin-top: 18px;">Email id:mahak.agrawal_cs19@gla.ac.in</p>
+            <br>
+            <p>Contact No:9876543210 </p> <br>
+            <p>GLA UNIVERSITY MATHURA</p>  <br>
+            <p>SOCIAL MEDIA LIMITED</p>   
+        </div>
+        <div class="d1">
+            <p style="margin-top: 18px;">Email id:dimpal.agrawal_cs19@gla.ac.in</p>
+            <br>
+            <p>Contact No:9876543210 </p> <br> 
+            <p>GLA UNIVERSITY MATHURA</p>  <br>
+            <p>SOCIAL MEDIA LIMITED</p>  
+        </div>
+        </div>
+        <a href="./services.html" style="color: white;font-size: 20px;background-color: tomato;padding: 10px;text-decoration: none;margin-top: 800px;">BACK</a>
+
+</body>
+</html>

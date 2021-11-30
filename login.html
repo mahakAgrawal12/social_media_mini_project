@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LOGIN PAGE</title>
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .login {
+            margin: 200px;
+            margin-left: 550px;
+            margin-top: 80px;
+            border-radius: 10px;
+            border: 10px solid hsl(199, 75%, 44%);
+            border-style: ridge;
+            display: inline-block;
+            background-image: linear-gradient(to left,rgb(32, 127, 190),rgb(39, 188, 207));
+            width: 20%;
+            height: 25%;
+            padding: 30px;
+            box-shadow: 8px 10px 7px 5px rgb(48, 47, 45);
+        }
+        
+        .loginbtn {
+            margin-left: 90px;
+        }
+        
+        #log {
+            padding: 10px 90px;
+            font-size: 20px;
+            background-image:linear-gradient( to top,orange,red);
+            border-radius: 10px;
+            width: 180%;
+            margin-left: -50px;
+            background: linear-gradient( #af0023);
+            color: black;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-shadow: 3px 3px 3px 3px black;
+            text-decoration: none;
+        }
+        
+        #u {
+            height: 20px;
+            width: 58%;
+        }
+        
+        #p {
+            height: 20px;
+            width: 58%;
+        }
+        h1{
+            animation:5s bounce linear infinite;
+
+        }
+        @keyframes bounce{
+            0%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.2);
+            }
+        }
+        ul{
+        display: inline-flex;
+        list-style: none;
+        margin-left: 820px;
+        
+    }
+
+    
+    
+    </style>
+</head>
+
+<body style="background-image: url(./u.jpg);" class="b">
+
+    
+    <p style="color: white;font-size: 20px;">Dont't have an account?</p>
+    <a href="./index.html" style="color: white;font-size: 20px;background-color: tomato;padding: 10px;text-decoration: none;"> GO BACK FOR SIGNUP</a>
+    <h1  style="color: rgb(255, 255, 255);font-weight: bold;font-family: 'Times New Roman', Times, serif;text-align: center;font-size: 60px;">Please Fill Your Credentials!</h1>
+
+    <div class="login">
+        <label for="usern"><b><span style="border:2px solid black;padding:2px;background-color:rgb(241, 227, 227);color:black ;border-radius:5px ">USERNAME</span>  : </b></label>
+        <input type="text" placeholder="Enter Username" name="username" id="u" required>
+
+        <br>
+        <br>
+        <label for="pass"><b><span style="border:2px solid black;padding:2px ;background-color:rgb(241, 227, 227) ;color:black;border-radius:5px ">PASSWORD</span> : </b></label>
+        <input type="password" placeholder="Enter the password" name="password" id="p" required>
+        <br><br>
+        <div class="remember">
+            <span style="margin-left:120px;font-size:25px;color:whitesmoke;font-family:cursive">
+           
+           <br><br>
+            <input type="checkbox"name="remember" id="rem"> Remember Me</span>
+            </button>
+            </label>
+        </div>
+        <br><br>
+        <div class="loginbtn">
+             <a href="./index1.html" id="log">LOGIN</a>
+            <!-- <input type="submit" value="LOGIN" id="log" onclick="validate();"> -->
+
+
+
+        </div>
+
+        <br>
+</div>
+    </div>
+</body>
+<!-- <script>
+    function  validate()  {            
+        var  username  =  document.getElementById("u").value;            
+        var  password  =  document.getElementById("p").value;            
+        if  (username  ==  null  ||  username  ==  "")  {                
+            alert("Please enter the username.");                
+            return  false;            
+        }            
+        if  (password  ==  null  ||  password  ==  "")  {                
+            alert("Please enter the password.");                
+            return  false;            
+        }            
+        alert('Login successful');                    
+    }
+</script> -->
+
+ 
+</html>
