@@ -284,11 +284,12 @@ h3{
                     <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a href="./index1.html" style="background-color: red;border: 3px solid red;padding: 10px 15px;color: white;font-size: 15px;">Sign Up</a>
-            </form>
+                <input type="text" placeholder="Name" id="name" />
+                <input type="email" placeholder="Email" id="email"/>
+                <input type="password" placeholder="Password" id="password"/>
+               <button id="sign up"> <a href="./index1.html" style="background-color: red;border: 3px solid red;padding: 10px 15px;color: white;font-size: 15px;">Sign Up</a>
+          </button>
+			</form>
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
@@ -333,5 +334,8 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
     </script>
+	<script src="http://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+	<script src="./curd.js"></script>
+	<script src="./fireConfig.js"></script>
 </body>
 </html>
